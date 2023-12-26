@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png" />
+
+    <title>order details</title>
+</head>
+
+<body>
+    <!-- preloade -->
+    <div class="preload preload-container">
+        <div class="spinner-circle spinner-line">
+            <span class="spinner-circle1 spinner-child"></span>
+            <span class="spinner-circle2 spinner-child"></span>
+            <span class="spinner-circle3 spinner-child"></span>
+            <span class="spinner-circle4 spinner-child"></span>
+            <span class="spinner-circle5 spinner-child"></span>
+            <span class="spinner-circle6 spinner-child"></span>
+            <span class="spinner-circle7 spinner-child"></span>
+            <span class="spinner-circle8 spinner-child"></span>
+            <span class="spinner-circle9 spinner-child"></span>
+        </div>
+      </div>
+    <!-- /preload -->
+    <div class="header fixed-top line4-bt">
+        <div class="left">
+          <a href="javascript:void(0);" class="icon back-btn"><i class="icon-left-btn"></i></a>
+        </div>
+        <h6>My Order</h6>
+        <div class="right" data-bs-target="#filter" data-bs-toggle="modal">
+            <span>
+                <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 3C2.55228 3 3 2.55228 3 2C3 1.44772 2.55228 1 2 1C1.44772 1 1 1.44772 1 2C1 2.55228 1.44772 3 2 3Z" stroke="#787982" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 9C2.55228 9 3 8.55228 3 8C3 7.44772 2.55228 7 2 7C1.44772 7 1 7.44772 1 8C1 8.55228 1.44772 9 2 9Z" fill="white" stroke="#787982" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 15C2.55228 15 3 14.5523 3 14C3 13.4477 2.55228 13 2 13C1.44772 13 1 13.4477 1 14C1 14.5523 1.44772 15 2 15Z" stroke="#787982" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>   
+            </span>
+        </div>  
+    </div>
+    <div class="app-content">
+        <div class="tf-container">
+            <div class="mt-16 time-line-order">
+                    <div class="icon">
+                        <i class="icon-check"></i>
+                        <span class="progress-order">Ordered</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="icon">
+                        <i class="icon-check"></i>
+                        
+                        <span class="progress-order">Out for Delivery</span>
+                    </div>
+                    <div class="line completed"></div>
+                    <div class="icon completed">
+                        <i class="icon-check"></i>
+                        
+                        <span class="progress-order completed">Completed</span>
+                    </div>
+                        
+            </div>   
+             <div class="mt-40 line-top line-bt py-16 d-flex justify-content-between">
+                <h5>Order has been completed</h5>
+                <a href="chat.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_1_3501)">
+                          <path d="M9.96094 0.625C4.39863 0.625 0 4.60715 0 9.41406C0 11.4618 0.810273 13.4457 2.285 15.0175C2.5768 16.2207 2.22254 17.4957 1.34352 18.3747C0.976016 18.7422 1.23613 19.375 1.75781 19.375C3.4275 19.375 5.03688 18.7207 6.23336 17.5675C7.41664 17.9895 8.66867 18.2031 9.96094 18.2031C15.5387 18.2031 20 14.2093 20 9.41406C20 4.61613 15.5356 0.625 9.96094 0.625ZM9.96094 17.0391C8.68277 17.0391 7.45051 16.7986 6.29836 16.3398C6.18786 16.2958 6.06658 16.2864 5.95064 16.313C5.8347 16.3396 5.7296 16.4008 5.6493 16.4886C4.94156 17.262 4.02152 17.8013 3.01934 18.0491C3.57152 16.991 3.71266 15.7436 3.37652 14.5618C3.35004 14.4686 3.30083 14.3835 3.23332 14.314C1.90398 12.9447 1.16406 11.2046 1.16406 9.41406C1.16406 5.21395 5.11465 1.78906 9.96094 1.78906C14.8503 1.78906 18.8359 5.21395 18.8359 9.41406C18.8359 13.6142 14.8503 17.0391 9.96094 17.0391Z" fill="#787982"/>
+                          <path d="M5.27344 7.65625C4.30418 7.65625 3.51562 8.4448 3.51562 9.41406C3.51562 10.3833 4.30418 11.1719 5.27344 11.1719C6.2427 11.1719 7.03125 10.3833 7.03125 9.41406C7.03125 8.4448 6.2427 7.65625 5.27344 7.65625ZM5.27344 10C4.95035 10 4.6875 9.73715 4.6875 9.41406C4.6875 9.09098 4.95035 8.82812 5.27344 8.82812C5.59652 8.82812 5.85938 9.09098 5.85938 9.41406C5.85938 9.73715 5.59652 10 5.27344 10ZM9.96094 7.65625C8.99168 7.65625 8.20312 8.4448 8.20312 9.41406C8.20312 10.3833 8.99168 11.1719 9.96094 11.1719C10.9302 11.1719 11.7188 10.3833 11.7188 9.41406C11.7188 8.4448 10.9302 7.65625 9.96094 7.65625ZM9.96094 10C9.63785 10 9.375 9.73715 9.375 9.41406C9.375 9.09098 9.63785 8.82812 9.96094 8.82812C10.284 8.82812 10.5469 9.09098 10.5469 9.41406C10.5469 9.73715 10.284 10 9.96094 10ZM14.7266 7.65625C13.7573 7.65625 12.9688 8.4448 12.9688 9.41406C12.9688 10.3833 13.7573 11.1719 14.7266 11.1719C15.6958 11.1719 16.4844 10.3833 16.4844 9.41406C16.4844 8.4448 15.6958 7.65625 14.7266 7.65625ZM14.7266 10C14.4035 10 14.1406 9.73715 14.1406 9.41406C14.1406 9.09098 14.4035 8.82812 14.7266 8.82812C15.0496 8.82812 15.3125 9.09098 15.3125 9.41406C15.3125 9.73715 15.0496 10 14.7266 10Z" fill="#787982"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_3501">
+                            <rect width="20" height="20" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                </a>
+             </div>   
+            <div class="py-16 line-bt">
+                <ul>
+                    <li>
+                        <h6>Fruist Ogranic Apple</h6>
+                    </li>
+                    <li class="mt-8 text-caption">$21.5 - 2 items - Interbet Banking/ATM</li>
+                    <li class="mt-4 text-caption">Tony Nguyen - 0123456789 </li>
+                </ul>
+                <ul class="mt-12">
+                    <li>
+                        <h6>Delivery to</h6>
+                    </li>
+                    <li class="mt-8 text-caption">4517 Washington Ave. Manchester, Kentucky 39495</li>
+                    <li class="mt-4 text-caption">Estimated time of completion : 1/01/2023 - 10:25AM</li>
+                </ul>
+            </div>
+            <div class="pt-16">
+                <h5>Agroces - Grocery Delivery App</h5>
+                <a href="#" class="order-item py-12">
+                    <div class="img">
+                        <img src="images/product/product19.png" alt="img">
+                    </div>
+                    <div class="content">
+                        <div class="left">
+                            <h6>Ogranic Apple</h6>
+                            <span class="text-caption">Quantity: 2 Kg</span>
+                        </div>
+                        <span class="price">$21.5</span>
+                    </div>
+                </a>
+                <ul class="line-bt pb-16">
+                    <li class="d-flex justify-content-between text-caption">
+                        <span>Shipping fee</span>
+                        <span>$2.00</span>
+                    </li>
+                    <li class="d-flex justify-content-between mt-8 text-caption">
+                        <span>Voucher</span>
+                        <span>15%</span>
+                    </li>
+                    <li class="d-flex justify-content-between mt-8">
+                        <span class="text-caption">Total bill</span>
+                        <span class="text-black">$15.59</span>
+                    </li>
+                </ul>
+                <ul class="py-16">
+                    <li class="text-caption">
+                        <span>Note</span>
+                        <span>Not present</span>
+                    </li>
+                    <li class="text-caption mt-8">
+                        <span>Transaction ID</span>
+                        <span>#2105ABS</span>
+                    </li>
+                    <li class="text-caption mt-8">
+                        <span>Time of order placement</span>
+                        <span>10:05 - 01/01/2023</span>
+                    </li>
+                    <li class="text-caption mt-8">
+                        <span>Payment</span>
+                        <span>Internet Banking/ATM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-fixed p-16">
+        <a href="#" class="tf-btn surface text-secondary">Reset Order</a>
+    </div>
+    
+    <div class="modal fade action-sheet" id="filter">
+        <div class="modal-dialog" role="document">
+            <ul class="modal-boxContent bg-white radius-12">
+                <li class="">
+                    <a href="javascript:void(0);"  class="fw-6 text-secondary d-flex justify-content-center p-18">Help</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"  class="line-top fw-6 text-primary d-flex justify-content-center p-18">Delete</a>
+                </li>
+  
+            </ul>
+            <a href="javascript:void(0);" data-bs-dismiss="modal" class="mt-8 fw-6 text-black d-flex justify-content-center p-18  bg-white radius-12">Cancel</a>
+
+        </div>
+    </div>
+   
+   
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/nouislider.min.js"></script>
+    <script type="text/javascript" src="js/rangle-slider.js"></script>
+    <script type="text/javascript" src="js/count-down.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+</body>
+
+</html>

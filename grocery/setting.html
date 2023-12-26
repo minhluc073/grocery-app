@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet"type="text/css" href="css/styles.css"/>
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png" />
+
+    <title>Setting</title>
+</head>
+
+<body class="bg-surface">
+    <!-- preloade -->
+    <div class="preload preload-container">
+      <div class="spinner-circle spinner-line">
+        <span class="spinner-circle1 spinner-child"></span>
+        <span class="spinner-circle2 spinner-child"></span>
+        <span class="spinner-circle3 spinner-child"></span>
+        <span class="spinner-circle4 spinner-child"></span>
+        <span class="spinner-circle5 spinner-child"></span>
+        <span class="spinner-circle6 spinner-child"></span>
+        <span class="spinner-circle7 spinner-child"></span>
+        <span class="spinner-circle8 spinner-child"></span>
+        <span class="spinner-circle9 spinner-child"></span>
+    </div>
+      </div>
+    <!-- /preload -->
+    <div class="header fixed-top line4-bt">
+        <div class="left">
+          <a href="javascript:void(0);" class="icon back-btn"><i class="icon-left-btn"></i></a>
+        </div>
+        <h6>Setting</h6>  
+    </div>
+    <div class="app-content style-2">
+        <div class="bg-white">
+            <div class="tf-container">
+                <div class="pt-16 pb-16">
+                    <a href="change-pass.html" class="d-flex justify-content-between align-items-center fw-6 pb-12 line-bt">
+                        Change Password
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <path d="M10.4745 8.96209L6.45147 12.9752C6.19556 13.2306 5.78065 13.2306 5.52486 12.9752C5.26906 12.72 5.26906 12.3061 5.52486 12.0509L9.08458 8.49997L5.52497 4.94915C5.26916 4.69387 5.26916 4.28002 5.52497 4.02484C5.78077 3.76955 6.19567 3.76955 6.45158 4.02484L10.4746 8.03796C10.6025 8.16562 10.6663 8.33274 10.6663 8.49995C10.6663 8.66725 10.6023 8.8345 10.4745 8.96209Z" fill="#787982"/>
+                        </svg>
+                    </a>
+                    <div class="mt-20 pb-12 line-bt d-flex justify-content-between align-items-center">
+                        <label for="switchCheckAuthen">
+                            <p class="fw-6 text-black">Biometric Authentication</p>
+                            <p class="mt-8 text-caption">Fingerprint, Face ID</p>
+                        </label>
+                        <input type="checkbox" class="tf-switch-check" id="switchCheckAuthen" checked> 
+                    </div>
+                    <div class="mt-20 pb-12 line-bt d-flex justify-content-between align-items-center">
+                        <label for="switchCheckTheme" class="fw-6 text-black">
+                            Dark/Light Mode
+                        </label>
+                        <input type="checkbox" class="tf-switch-check" id="switchCheckTheme" checked> 
+                    </div>
+                    <a href="#notiSetting" data-bs-toggle="modal" class="mt-20 pb-12 line-bt d-flex justify-content-between align-items-center fw-6">
+                        Setting Notification
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <path d="M10.4748 8.96197L6.45178 12.975C6.19587 13.2304 5.78095 13.2304 5.52517 12.975C5.26936 12.7198 5.26936 12.306 5.52517 12.0508L9.08489 8.49985L5.52527 4.94903C5.26946 4.69374 5.26946 4.2799 5.52527 4.02472C5.78108 3.76943 6.19597 3.76943 6.45188 4.02472L10.4749 8.03784C10.6028 8.16549 10.6666 8.33262 10.6666 8.49983C10.6666 8.66712 10.6026 8.83438 10.4748 8.96197Z" fill="#787982"/>
+                        </svg>
+                    </a>
+                    <div data-bs-target="#lockApp" data-bs-toggle="modal" class="mt-20 d-flex justify-content-between align-items-center">
+                        <div>
+                            <p class="fw-6 text-black">Automatically Lock Apps</p>
+                            <p class="mt-8 text-caption">Better account security, avoid unintended problems</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <path d="M10.4748 8.96197L6.45178 12.975C6.19587 13.2304 5.78095 13.2304 5.52517 12.975C5.26936 12.7198 5.26936 12.306 5.52517 12.0508L9.08489 8.49985L5.52527 4.94903C5.26946 4.69374 5.26946 4.2799 5.52527 4.02472C5.78108 3.76943 6.19597 3.76943 6.45188 4.02472L10.4749 8.03784C10.6028 8.16549 10.6666 8.33262 10.6666 8.49983C10.6666 8.66712 10.6026 8.83438 10.4748 8.96197Z" fill="#787982"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white mt-8">
+            <div class="tf-container">
+                <div class="pt-16 pb-16 d-flex justify-content-between align-items-center" data-bs-target="#language" data-bs-toggle="modal">
+                    <span>Language</span>
+                    <p class="text-caption">
+                        <span class="text-val-language">English</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                        <path d="M10.4748 8.96197L6.45178 12.975C6.19587 13.2304 5.78095 13.2304 5.52517 12.975C5.26936 12.7198 5.26936 12.306 5.52517 12.0508L9.08489 8.49985L5.52527 4.94903C5.26946 4.69374 5.26946 4.2799 5.52527 4.02472C5.78108 3.76943 6.19597 3.76943 6.45188 4.02472L10.4749 8.03784C10.6028 8.16549 10.6666 8.33262 10.6666 8.49983C10.6666 8.66712 10.6026 8.83438 10.4748 8.96197Z" fill="#787982"/>
+                      </svg>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white mt-8">
+            <div class="tf-container">
+                <div class="pt-16 pb-16 text-primary fw-6" data-bs-target="#delete" data-bs-toggle="modal">Delete The Account</div>
+            </div>
+        </div>
+            
+        
+    </div>
+
+    <div class="modal fade modalCenter" id="delete">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-notiCenter">
+                <div class="top">
+                    <h5 class="text-center">Do You Really Want To Delete This Account?</h5>
+                </div>
+                <div class="bottom">
+                    <a href="javascript:void(0);" data-bs-dismiss="modal">Cancel</a>
+                    <a href="javascript:void(0);" data-bs-dismiss="modal" class="text-primary">Delete</a>
+                </div>
+  
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade action-sheet full" id="language">
+        <div class="modal-dialog" role="document">
+            <div class="modal-setting language">
+                <div class="fw-6 text-center text-black">Language</div>
+                <ul class="mt-8">
+                    <li class="item-check active language-val" data-bs-dismiss="modal">
+                        English <i class="icon icon-check"></i> 
+                    </li>
+                    <li class="item-check language-val" data-bs-dismiss="modal">
+                        VietNam <i class="icon icon-check"></i> 
+                    </li>
+                    <li class="item-check language-val" data-bs-dismiss="modal">
+                        Portugal <i class="icon icon-check"></i> 
+                    </li>
+                    <li class="item-check language-val" data-bs-dismiss="modal">
+                        Germany <i class="icon icon-check"></i> 
+                    </li>
+                    <li class="item-check language-val" data-bs-dismiss="modal">
+                        China <i class="icon icon-check"></i> 
+                    </li>
+                    <li class="item-check language-val" data-bs-dismiss="modal">
+                        Switzerland <i class="icon icon-check"></i> 
+                    </li>
+                </ul>
+  
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade action-sheet full" id="lockApp">
+        <div class="modal-dialog" role="document">
+            <div class="modal-setting lockApp">
+                <div class="fw-6 text-center text-black">Automatically lock the following app</div>
+                <ul class="mt-8">
+                    <li class="item-check" data-bs-dismiss="modal">
+                        30 seconds <i class="icon icon-check"></i> 
+                    </li>
+                    <li class="item-check" data-bs-dismiss="modal">
+                        1 minute <i class="icon icon-check"></i> 
+                    </li>
+                    <li class="item-check" data-bs-dismiss="modal">
+                        2 minute <i class="icon icon-check"></i> 
+                    </li>
+                    <li class="item-check" data-bs-dismiss="modal">
+                        5 minute <i class="icon icon-check"></i> 
+                    </li>
+                    <li class="item-check active" data-bs-dismiss="modal">
+                        No auto-lock <i class="icon icon-check"></i> 
+                    </li>
+                </ul>
+  
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modalRight" id="notiSetting">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="header fixed-top line4-bt">
+                    <div class="left" data-bs-dismiss="modal">
+                      <a href="javascript:void(0);" class="icon"><i class="icon-left-btn"></i></a>
+                    </div>
+                    <h6>Notification Setting</h6>  
+                </div> 
+                <div class="overflow-auto app-content style-2">
+                    <div class="tf-container">
+                        <div class="mt-20 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swGeneral" class="fw-6 text-black">
+                                General Notification
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swGeneral" checked> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swVibrate" class="fw-6 text-black">
+                                Vibrate
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swVibrate"> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swAppUpdate" class="fw-6 text-black">
+                                App Update
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swAppUpdate" checked> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swBill" class="fw-6 text-black">
+                                Bill Reminder
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swBill"> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swPromotion" class="fw-6 text-black">
+                                Promotion
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swPromotion" checked> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swDiscount" class="fw-6 text-black">
+                                Discount Available
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swDiscount" checked> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swPayment" class="fw-6 text-black">
+                                Payment Request
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swPayment"> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swService" class="fw-6 text-black">
+                                New Service Available
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swService" checked> 
+                        </div>
+                        <div class="mt-12 pb-16 d-flex justify-content-between align-items-center">
+                            <label for="swAvailable" class="fw-6 text-black">
+                                New Tips Available
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swAvailable" checked> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+        
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png" />
+
+    <title>order</title>
+</head>
+
+<body class="bg-surface">
+    <!-- preloade -->
+    <div class="preload preload-container">
+        <div class="spinner-circle spinner-line">
+            <span class="spinner-circle1 spinner-child"></span>
+            <span class="spinner-circle2 spinner-child"></span>
+            <span class="spinner-circle3 spinner-child"></span>
+            <span class="spinner-circle4 spinner-child"></span>
+            <span class="spinner-circle5 spinner-child"></span>
+            <span class="spinner-circle6 spinner-child"></span>
+            <span class="spinner-circle7 spinner-child"></span>
+            <span class="spinner-circle8 spinner-child"></span>
+            <span class="spinner-circle9 spinner-child"></span>
+        </div>
+      </div>
+    <!-- /preload -->
+    <div class="header fixed-top">
+        <div class="left">
+          <a href="javascript:void(0);" class="icon back-btn"><i class="icon-left-btn"></i></a>
+        </div>
+        <h6>My Order</h6>  
+    </div>
+    <div class="app-content">
+        <div class="bg-white pt-12 pb-12">
+            <div class="tf-container">
+                <ul class="product-tabs style2" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#processing">Processing</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" data-bs-toggle="tab" data-bs-target="#shipped">Shipped</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#completed">Completed</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#canceled">Canceled</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="tf-container">
+            <div class="tab-content mt-16">
+                <div class="tab-pane fade active show" id="processing" role="tabpanel">
+                    <div class="card-style2">
+                        <div class="d-flex justify-content-between">
+                            <p><span class="text-black">Food</span>#2105ABS</p>
+                            <span>24/8/2023</span>
+                        </div>
+                        <ul class="order-box mt-12">
+                            <li>
+                                <a href="#" class="order-item">
+                                    <div class="img">
+                                        <img src="images/product/product18.png" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <div class="left">
+                                            <h6>Oiliness Strore</h6>
+                                            <p class="text-black mt-8">Ferrero Collection </p>
+                                            <span class="text-caption">Quantity: 2 Kg</span>
+                                        </div>
+                                        <span class="price">$21.5</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="order-item">
+                                    <div class="img">
+                                        <img src="images/product/product19.png" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <div class="left">
+                                            <h6>Oiliness Strore</h6>
+                                            <p class="text-black mt-8">Ferrero Collection </p>
+                                            <span class="text-caption">Quantity: 2 Kg</span>
+                                        </div>
+                                        <span class="order-price">$21.5</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="bottom mt-12 d-flex align-items-center justify-content-between">
+                            <a href="#" class="btn-order process">Processing</a>
+                            <div>
+                                <span class="text-caption text-black">Total</span>
+                                <span class="order-price">$44.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="shipped" role="tabpanel">
+                    <div class="card-style2">
+                        <div class="d-flex justify-content-between">
+                            <p><span class="text-black">Food</span>#2105ABS</p>
+                            <span>24/8/2023</span>
+                        </div>
+                        <ul class="order-box mt-12">
+                            <li>
+                                <a href="#" class="order-item">
+                                    <div class="img">
+                                        <img src="images/product/product18.png" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <div class="left">
+                                            <h6>Oiliness Strore</h6>
+                                            <p class="text-black mt-8">Ferrero Collection </p>
+                                            <span class="text-caption">Quantity: 2 Kg</span>
+                                        </div>
+                                        <span class="price">$21.5</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="order-item">
+                                    <div class="img">
+                                        <img src="images/product/product19.png" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <div class="left">
+                                            <h6>Oiliness Strore</h6>
+                                            <p class="text-black mt-8">Ferrero Collection </p>
+                                            <span class="text-caption">Quantity: 2 Kg</span>
+                                        </div>
+                                        <span class="order-price">$21.5</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="bottom mt-12 d-flex align-items-center justify-content-between">
+                            <a href="#" class="btn-order shipped">Out for Delivery</a>
+                            <div>
+                                <span class="text-caption text-black">Total</span>
+                                <span class="order-price">$44.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="completed" role="tabpanel">
+                    <div class="card-style2">
+                        <div class="d-flex justify-content-between">
+                            <p><span class="text-black">Food</span>#2105ABS</p>
+                            <span>24/8/2023</span>
+                        </div>
+                        <ul class="order-box mt-12">
+                            <li>
+                                <a href="#" class="order-item">
+                                    <div class="img">
+                                        <img src="images/product/product18.png" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <div class="left">
+                                            <h6>Oiliness Strore</h6>
+                                            <p class="text-black mt-8">Ferrero Collection </p>
+                                            <span class="text-caption">Quantity: 2 Kg</span>
+                                        </div>
+                                        <span class="price">$21.5</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="order-item">
+                                    <div class="img">
+                                        <img src="images/product/product19.png" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <div class="left">
+                                            <h6>Oiliness Strore</h6>
+                                            <p class="text-black mt-8">Ferrero Collection </p>
+                                            <span class="text-caption">Quantity: 2 Kg</span>
+                                        </div>
+                                        <span class="order-price">$21.5</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="bottom mt-12 d-flex align-items-center justify-content-between">
+                            <a href="#" class="btn-order completed">Completed</a>
+                            <div>
+                                <span class="text-caption text-black">Total</span>
+                                <span class="order-price">$44.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-style2 mt-12">
+                        <div class="d-flex justify-content-between">
+                            <p><span class="text-black">Food</span>#2105ABS</p>
+                            <span>24/8/2023</span>
+                        </div>
+                        <ul class="order-box mt-12">
+                            <li>
+                                <a href="#" class="order-item">
+                                    <div class="img">
+                                        <img src="images/product/product18.png" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <div class="left">
+                                            <h6>Oiliness Strore</h6>
+                                            <p class="text-black mt-8">Ferrero Collection </p>
+                                            <span class="text-caption">Quantity: 2 Kg</span>
+                                        </div>
+                                        <span class="price">$21.5</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="order-item">
+                                    <div class="img">
+                                        <img src="images/product/product19.png" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <div class="left">
+                                            <h6>Oiliness Strore</h6>
+                                            <p class="text-black mt-8">Ferrero Collection </p>
+                                            <span class="text-caption">Quantity: 2 Kg</span>
+                                        </div>
+                                        <span class="order-price">$21.5</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="bottom mt-12 d-flex align-items-center justify-content-between">
+                            <a href="#" class="btn-order completed">Completed</a>
+                            <div>
+                                <span class="text-caption text-black">Total</span>
+                                <span class="order-price">$44.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="canceled" role="tabpanel">
+                    <div class="card-style2">
+                        <div class="d-flex justify-content-between">
+                            <p><span class="text-black">Food</span>#2105ABS</p>
+                            <span>24/8/2023</span>
+                        </div>
+                        <ul class="order-box mt-12">
+                            <li>
+                                <a href="#" class="order-item">
+                                    <div class="img">
+                                        <img src="images/product/product18.png" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <div class="left">
+                                            <h6>Oiliness Strore</h6>
+                                            <p class="text-black mt-8">Ferrero Collection </p>
+                                            <span class="text-caption">Quantity: 2 Kg</span>
+                                        </div>
+                                        <span class="price">$21.5</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="order-item">
+                                    <div class="img">
+                                        <img src="images/product/product19.png" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <div class="left">
+                                            <h6>Oiliness Strore</h6>
+                                            <p class="text-black mt-8">Ferrero Collection </p>
+                                            <span class="text-caption">Quantity: 2 Kg</span>
+                                        </div>
+                                        <span class="order-price">$21.5</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="bottom mt-12 d-flex align-items-center justify-content-between">
+                            <a href="#" class="btn-order cancel">Cancelled</a>
+                            <div>
+                                <span class="text-caption text-black">Total</span>
+                                <span class="order-price">$44.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-style2 mt-12">
+                        <div class="d-flex justify-content-between">
+                            <p><span class="text-black">Food</span>#2105ABS</p>
+                            <span>24/8/2023</span>
+                        </div>
+                        <ul class="order-box mt-12">
+                            <li>
+                                <a href="#" class="order-item">
+                                    <div class="img">
+                                        <img src="images/product/product18.png" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <div class="left">
+                                            <h6>Oiliness Strore</h6>
+                                            <p class="text-black mt-8">Ferrero Collection </p>
+                                            <span class="text-caption">Quantity: 2 Kg</span>
+                                        </div>
+                                        <span class="price">$21.5</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="order-item">
+                                    <div class="img">
+                                        <img src="images/product/product19.png" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <div class="left">
+                                            <h6>Oiliness Strore</h6>
+                                            <p class="text-black mt-8">Ferrero Collection </p>
+                                            <span class="text-caption">Quantity: 2 Kg</span>
+                                        </div>
+                                        <span class="order-price">$21.5</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="bottom mt-12 d-flex align-items-center justify-content-between">
+                            <a href="#" class="btn-order cancel">Cancelled</a>
+                            <div>
+                                <span class="text-caption text-black">Total</span>
+                                <span class="order-price">$44.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            
+        
+    </div>
+
+    <div class="menubar-footer footer-fixed">
+        <ul class="inner-bar">
+            <li><a href="index.html"><i class="icon icon-home"></i> Store</a></li>
+            <li><a href="category.html"><i class="icon icon-group"></i> Categories</a></li>
+            <li><a href="service.html"><i class="icon icon-store"></i> Service</a></li>
+            <li class="active"><a href="order.html"><i class="icon icon-basket-act"></i> My Order</a></li>
+            <li><a href="profile.html"><i class="icon icon-profile"></i> Profile</a></li>
+        </ul>
+         
+    </div>
+    
+    
+   
+   
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/nouislider.min.js"></script>
+    <script type="text/javascript" src="js/rangle-slider.js"></script>
+    <script type="text/javascript" src="js/count-down.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+</body>
+
+</html>

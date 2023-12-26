@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png" />
+
+    <title>order</title>
+</head>
+
+<body class="bg-surface">
+    <!-- preloade -->
+    <div class="preload preload-container">
+        <div class="spinner-circle spinner-line">
+            <span class="spinner-circle1 spinner-child"></span>
+            <span class="spinner-circle2 spinner-child"></span>
+            <span class="spinner-circle3 spinner-child"></span>
+            <span class="spinner-circle4 spinner-child"></span>
+            <span class="spinner-circle5 spinner-child"></span>
+            <span class="spinner-circle6 spinner-child"></span>
+            <span class="spinner-circle7 spinner-child"></span>
+            <span class="spinner-circle8 spinner-child"></span>
+            <span class="spinner-circle9 spinner-child"></span>
+        </div>
+      </div>
+    <!-- /preload -->
+    <div class="header fixed-top">
+        <div class="left">
+          <a href="javascript:void(0);" class="icon back-btn"><i class="icon-left-btn"></i></a>
+        </div>
+        <h6>My Order</h6>  
+    </div>
+    <div class="app-content">
+        <div class="bg-white pt-12 pb-12">
+            <div class="tf-container">
+                <ul class="product-tabs style2" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#processing">Processing</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" data-bs-toggle="tab" data-bs-target="#shipped">Shipped</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#completed">Completed</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#canceled">Canceled</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="tf-container">
+            <div class="tab-content box-order-fix">
+                <div class="tab-pane fade active show" id="processing" role="tabpanel">
+                    <div class="text-center">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+                                <path d="M19.7566 31.3303L58.4464 10.643L45 3.875L5.1073 23.9558L19.7566 31.3303Z" fill="#787982"/>
+                                <path d="M70.1964 16.5577L31.5066 37.245L45 44.038L84.8927 23.9558L70.1964 16.5577Z" fill="#787982"/>
+                                <path d="M43.8984 45.9618L30.3125 39.1233V54.1486L24.4375 48.2339H18.5625V33.2086L3.875 25.8164V65.9779L43.8984 86.1248V45.9618Z" fill="#787982"/>
+                                <path d="M46.1016 45.9618V86.1248L86.125 65.9779V25.8164L46.1016 45.9618Z" fill="#787982"/>
+                            </svg>
+                        </span>
+                        <p class="fw-6 mt-20">You still don't have any orders</p>
+                        <a href="#" class="mt-40 tf-btn primary">Continue Shopping</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="shipped" role="tabpanel">
+                    <div class="text-center">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+                                <path d="M19.7566 31.3303L58.4464 10.643L45 3.875L5.1073 23.9558L19.7566 31.3303Z" fill="#787982"/>
+                                <path d="M70.1964 16.5577L31.5066 37.245L45 44.038L84.8927 23.9558L70.1964 16.5577Z" fill="#787982"/>
+                                <path d="M43.8984 45.9618L30.3125 39.1233V54.1486L24.4375 48.2339H18.5625V33.2086L3.875 25.8164V65.9779L43.8984 86.1248V45.9618Z" fill="#787982"/>
+                                <path d="M46.1016 45.9618V86.1248L86.125 65.9779V25.8164L46.1016 45.9618Z" fill="#787982"/>
+                            </svg>
+                        </span>
+                        <p class="fw-6 mt-20">You still don't have any orders</p>
+                        <a href="#" class="mt-40 tf-btn primary">Continue Shopping</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="completed" role="tabpanel">
+                    <div class="text-center">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+                                <path d="M19.7566 31.3303L58.4464 10.643L45 3.875L5.1073 23.9558L19.7566 31.3303Z" fill="#787982"/>
+                                <path d="M70.1964 16.5577L31.5066 37.245L45 44.038L84.8927 23.9558L70.1964 16.5577Z" fill="#787982"/>
+                                <path d="M43.8984 45.9618L30.3125 39.1233V54.1486L24.4375 48.2339H18.5625V33.2086L3.875 25.8164V65.9779L43.8984 86.1248V45.9618Z" fill="#787982"/>
+                                <path d="M46.1016 45.9618V86.1248L86.125 65.9779V25.8164L46.1016 45.9618Z" fill="#787982"/>
+                            </svg>
+                        </span>
+                        <p class="fw-6 mt-20">You still don't have any orders</p>
+                        <a href="#" class="mt-40 tf-btn primary">Continue Shopping</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="canceled" role="tabpanel">
+                    <div class="text-center">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+                                <path d="M19.7566 31.3303L58.4464 10.643L45 3.875L5.1073 23.9558L19.7566 31.3303Z" fill="#787982"/>
+                                <path d="M70.1964 16.5577L31.5066 37.245L45 44.038L84.8927 23.9558L70.1964 16.5577Z" fill="#787982"/>
+                                <path d="M43.8984 45.9618L30.3125 39.1233V54.1486L24.4375 48.2339H18.5625V33.2086L3.875 25.8164V65.9779L43.8984 86.1248V45.9618Z" fill="#787982"/>
+                                <path d="M46.1016 45.9618V86.1248L86.125 65.9779V25.8164L46.1016 45.9618Z" fill="#787982"/>
+                            </svg>
+                        </span>
+                        <p class="fw-6 mt-20">You still don't have any orders</p>
+                        <a href="#" class="mt-40 tf-btn primary">Continue Shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            
+        
+    </div>
+
+    <div class="menubar-footer footer-fixed">
+        <ul class="inner-bar">
+            <li><a href="index.html"><i class="icon icon-home"></i> Store</a></li>
+            <li><a href="category.html"><i class="icon icon-group"></i> Categories</a></li>
+            <li><a href="service.html"><i class="icon icon-store"></i> Service</a></li>
+            <li class="active"><a href="order.html"><i class="icon icon-basket-act"></i> My Order</a></li>
+            <li><a href="profile.html"><i class="icon icon-profile"></i> Profile</a></li>
+        </ul>
+         
+    </div>
+    
+    
+   
+   
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/nouislider.min.js"></script>
+    <script type="text/javascript" src="js/rangle-slider.js"></script>
+    <script type="text/javascript" src="js/count-down.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+</body>
+
+</html>
