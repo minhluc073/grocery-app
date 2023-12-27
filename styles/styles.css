@@ -637,7 +637,7 @@ input[type="radio"] {
 }
 
 .box-left {
-  width: 400px;
+  width: 410px;
   height: 780px;
   border-radius: 30px;
   background: #000000;
@@ -659,7 +659,7 @@ input[type="radio"] {
 }
 
 .box-left .wrap-phone .frame {
-  width: 375px;
+  width: 390px;
   height: 750px;
   border: 0 !important;
   padding: 0;
