@@ -186,6 +186,22 @@
             // color: $primary;
         }
     }
+
+    .cart-footer {
+        background-color: var(--white);
+        pointer-events: auto;
+        .top {
+            padding: 0 16px 16px;
+            @include flex(center, space-between);
+            border-bottom: 1px solid var(--line);
+            margin: 0 -16px;
+            .icon-close1 {
+                font-size: 18px;
+                color: var(--secondary);
+                font-weight: 600;
+            }
+        }
+    }
 }
 .modal-backdrop {
     background-color: var(--backdrop);

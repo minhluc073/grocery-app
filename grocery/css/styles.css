@@ -761,6 +761,10 @@ code {
   padding: 10px;
 }
 
+.p-12 {
+  padding: 12px;
+}
+
 .p-16 {
   padding: 16px;
 }
@@ -1136,6 +1140,10 @@ code {
 
 .rolate-90 {
   transform: rotate(90deg);
+}
+
+.radius-8 {
+  border-radius: 8px;
 }
 
 .radius-12 {
@@ -1710,7 +1718,7 @@ code {
 
 /*------------ button ---------------- */
 .tf-btn {
-  padding: 12px 40px;
+  padding: 12px;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -3826,6 +3834,23 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-style: normal;
   line-height: normal;
 }
+.modal .cart-footer {
+  background-color: var(--white);
+  pointer-events: auto;
+}
+.modal .cart-footer .top {
+  padding: 0 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  margin: 0 -16px;
+}
+.modal .cart-footer .top .icon-close1 {
+  font-size: 18px;
+  color: var(--secondary);
+  font-weight: 600;
+}
 
 .modal-backdrop {
   background-color: var(--backdrop);
@@ -5060,6 +5085,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   text-align: end;
   padding-right: 20px;
 }
+.progress-tracking.done .progress-bar {
+  text-align: center;
+  padding: 0;
+}
 
 .cart-store {
   display: flex;
@@ -5117,6 +5146,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-radius: 10px;
   border: 1px solid var(--line);
   position: relative;
+  overflow: hidden;
 }
 .card-product .box-img {
   background-color: var(--surface);
@@ -5152,6 +5182,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: var(--white);
   padding: 0px 4px;
   background-color: #e74141;
+}
+.card-product .default-press {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
 }
 
 .default-press {
@@ -5190,9 +5224,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .box-card-bank {
-  width: 77px;
-  height: 77px;
-  padding: 12px 0px;
+  width: 90px;
+  height: 80px;
+  padding: 12px 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5272,6 +5306,16 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .ip-address[type=text]::placeholder {
   color: #b9bac3;
+}
+
+.group-ip-address {
+  position: relative;
+}
+.group-ip-address .icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 24px;
 }
 
 .textarea-address {
@@ -6637,7 +6681,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   width: 12px;
   height: 12px;
   background: var(--primary);
-  font-size: 5px;
+  font-size: 6px;
   display: inline-flex;
   justify-content: center;
   align-items: center;

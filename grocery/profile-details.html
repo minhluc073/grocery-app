@@ -13,8 +13,8 @@
     <link rel="stylesheet"type="text/css" href="css/styles.css"/>
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="images/logo/favicon.png" />
-    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png" />
+    <link rel="shortcut icon" href="images/logo/168.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
 
     <title>Profile</title>
 </head>
@@ -47,7 +47,7 @@
                 <div class="box-profile text-center pt-16">
                     <div class="avatar avt-96 mx-auto">
                         <img src="images/avt/avt1.jpg" alt="img">
-                        <span class="icon">
+                        <span class="icon" data-bs-target="#filterProfile" data-bs-toggle="modal">
                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
                                 <path d="M11.0525 1.66371H9.27168V1.48075C9.27168 0.663377 8.6083 0 7.79093 0H4.95875C4.14104 0 3.47799 0.663377 3.47799 1.48075V1.66371H1.69682C0.879112 1.66371 0.216064 2.32675 0.216064 3.14446V8.51926C0.216064 9.33663 0.879112 10 1.69682 10H11.0532C11.8709 10 12.5339 9.33663 12.5339 8.51926V3.14446C12.5333 2.32642 11.8702 1.66371 11.0525 1.66371ZM6.37434 8.46397C4.83173 8.46397 3.57737 7.20961 3.57737 5.667C3.57737 4.12471 4.83173 2.87002 6.37434 2.87002C7.91696 2.87002 9.17132 4.12439 9.17132 5.667C9.17132 7.20961 7.91663 8.46397 6.37434 8.46397ZM7.8551 5.667C7.8551 6.48273 7.1904 7.14775 6.37434 7.14775C5.55829 7.14775 4.89359 6.48273 4.89359 5.667C4.89359 4.85094 5.55829 4.18625 6.37434 4.18625C7.1904 4.18625 7.8551 4.85094 7.8551 5.667Z" fill="white"/>
                             </svg>
@@ -124,6 +124,28 @@
             <li class="active"><a href="profile.html"><i class="icon icon-profile-act"></i> Profile</a></li>
         </ul>
          
+    </div>
+
+    <div class="modal fade action-sheet" id="filterProfile">
+        <div class="modal-dialog" role="document">
+            <ul class="modal-boxContent bg-white radius-8">
+                <li>
+                    <a href="javascript:void(0);"  class="fw-5 d-flex justify-content-center p-16">Show Profile Picture</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"  class="line-top fw-5 d-flex justify-content-center p-16">New Photo Shoot</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"  class="line-top fw-5 d-flex justify-content-center p-16">Select Photo Form Device</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"  class="line-top fw-5 d-flex justify-content-center p-16">Choose An Existing Avatar</a>
+                </li>
+  
+            </ul>
+            <a href="javascript:void(0);" data-bs-dismiss="modal" class="mt-8 fw-6 text-primary d-flex justify-content-center p-12  bg-white radius-8">Dismiss</a>
+
+        </div>
     </div>
         
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
