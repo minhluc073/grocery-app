@@ -400,6 +400,9 @@
         width: 32px;
         height: 32px;
     }
+    &.active {
+        border-color: var(--primary);
+    }
 }
 .box-cart-select {
     display: flex;

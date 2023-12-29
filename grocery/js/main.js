@@ -1,21 +1,23 @@
 /*
  * show pass
  * otp input
- * range slider one
- * range slider two
- * clear Item
- * block delete
- * active photo
+ * delete Item
  * back Page
- * press toggles
  * clear Text
  * message
  * gallery
- * custom select
+ * image select
  * active Suggestions
- * preloader
+ * change value
+ * load more
+ * check item
+ * touch spin
+ * show notification
+ * hide popup 
  * touchSpin
- * theme setting color
+ * preloader 
+ * tree view
+
  */
 (function ($) {
   "use strict";
@@ -313,58 +315,7 @@
     }, 500);
   };
 
-  /* theme setting color
-  ------------------------------------------------------------------------------------- */
-  var themeSettingColor = function () {
-    $('input[name="theme_color"]').on("click", function () {
-      $("body").attr("data-theme-color", this.value);
-      localStorage.setItem("themeColor", this.value);
-    });
-  };
-  /* toggle theme
-  ------------------------------------------------------------------------------------- */
-  var toggleTheme = function () {
-    $("body").toggleClass(localStorage.toggled);
-    var toggle = $(".toggle-theme");
 
-    toggle.on("click", function () {
-      if (localStorage.toggled != "dark-theme") {
-        $("body").toggleClass("dark-theme", true);
-        localStorage.toggled = "dark-theme";
-        $(".theme-dark-icon").show();
-        $(".theme-light-icon").hide();
-        toggle.prop("checked", true);
-      } else {
-        $("body").toggleClass("dark-theme", false);
-        localStorage.toggled = "";
-        $(".theme-dark-icon").hide();
-        $(".theme-light-icon").show();
-        toggle.prop("checked", false);
-      }
-    });
-  };
-  /* set toggle theme
-  ------------------------------------------------------------------------------------- */
-  var setToggleTheme = function () {
-    var theme = localStorage.toggled;
-    if (theme) {
-      $(".theme-dark-icon").show();
-      $(".theme-light-icon").hide();
-    } else {
-      $(".theme-dark-icon").hide();
-      $(".theme-light-icon").show();
-    }
-  };
-  /* set color theme
-  ------------------------------------------------------------------------------------- */
-  var setLocalColor = function () {
-    var themeColor = localStorage.getItem("themeColor");
-    if (themeColor) {
-      $("body").attr("data-theme-color", themeColor);
-    } else {
-      $("body").attr("data-theme-color", "theme-primary");
-    }
-  };
   /* tree view
   ------------------------------------------------------------------------------------- */
   var treeView = function () {
@@ -398,9 +349,6 @@
     showNoti();
     hidePopupNoti();
     preloader();
-    // setLocalColor();
-    // themeSettingColor();
-    // toggleTheme();
-    // setToggleTheme();
+  
   });
 })(jQuery);

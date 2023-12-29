@@ -5242,6 +5242,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   width: 32px;
   height: 32px;
 }
+.box-card-bank.active {
+  border-color: var(--primary);
+}
 
 .box-cart-select {
   display: flex;
