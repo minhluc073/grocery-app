@@ -60,13 +60,13 @@
         </div>
         <div class="group-ip-address line4-bt">
             <input type="text" class="ip-address" value="0922.342.234">
-            <span class="icon">
+            <a href="tel:0922.342.234" class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M22 16.9201V19.9201C22.0011 20.1986 21.9441 20.4743 21.8325 20.7294C21.7209 20.9846 21.5573 21.2137 21.3521 21.402C21.1469 21.5902 20.9046 21.7336 20.6408 21.8228C20.3769 21.912 20.0974 21.9452 19.82 21.9201C16.7428 21.5857 13.787 20.5342 11.19 18.8501C8.77383 17.3148 6.72534 15.2663 5.19 12.8501C3.49998 10.2413 2.44824 7.27109 2.12 4.1801C2.09501 3.90356 2.12788 3.62486 2.2165 3.36172C2.30513 3.09859 2.44757 2.85679 2.63477 2.65172C2.82196 2.44665 3.04981 2.28281 3.30379 2.17062C3.55778 2.05843 3.83234 2.00036 4.11 2.0001H7.11C7.59531 1.99532 8.06579 2.16718 8.43376 2.48363C8.80173 2.80008 9.04208 3.23954 9.11 3.7201C9.23662 4.68016 9.47145 5.62282 9.81 6.5301C9.94455 6.88802 9.97366 7.27701 9.89391 7.65098C9.81415 8.02494 9.62886 8.36821 9.36 8.6401L8.09 9.9101C9.51356 12.4136 11.5865 14.4865 14.09 15.9101L15.36 14.6401C15.6319 14.3712 15.9752 14.1859 16.3491 14.1062C16.7231 14.0264 17.1121 14.0556 17.47 14.1901C18.3773 14.5286 19.3199 14.7635 20.28 14.8901C20.7658 14.9586 21.2094 15.2033 21.5265 15.5776C21.8437 15.9519 22.0122 16.4297 22 16.9201Z" stroke="#787982" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-            </span>
+            </a>
         </div>
-        <a href="choose-place.html" class="p-16 text-secondary2 d-flex justify-content-between align-items-center line-bt">
+        <a href="#modalLocation" data-bs-toggle="modal" class="p-16 fw-6 d-flex justify-content-between align-items-center line-bt">
             <span>Choose place</span>
             <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
@@ -90,11 +90,179 @@
             <textarea class="textarea-address" placeholder="Notes for shipper (optional)"></textarea>
         </div>
         <div class="footer-fixed p-16">
-            <a href="profile.html" class="tf-btn primary">Competed</a>
+            <a href="#modalLocation" data-bs-toggle="modal" class="tf-btn primary">Competed</a>
         </div>    
     </div>
     
-    
+    <div class="modal fade action-sheet full" id="modalLocation">
+        <div class="modal-dialog" role="document">
+            <div class="modal-up full">
+                <div class="top">
+                    <div class="inner">
+                        <h6>Choose Place</h6>
+                        <span class="icon-close1" data-bs-dismiss="modal"></span>
+                    </div>
+                </div> 
+                <div class="content">
+                    <div class="tf-container">
+                        <div class="search-box">
+                          <input
+                            type="text"
+                            class="search-field"
+                            placeholder="Search  for products..."
+                          />
+                          <a href="#" class="right-icon icon-search"></a>
+                        </div>
+                        <div class="map mt-12">
+                          <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d126154.66778598353!2d-117.84648566780709!3d33.664453196061245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s2972%20Westheimer%20Rd.%20Santa%20Ana%2C%20Illinois%2085486...%20!5e0!3m2!1sen!2s!4v1703500088560!5m2!1sen!2s"
+                            width="100%"
+                            height="353"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                          ></iframe>
+                        </div>
+                        <ul>
+                          <li class="d-flex align-items-center gap-20 py-16 line-bt">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="25"
+                                viewBox="0 0 24 25"
+                                fill="none"
+                              >
+                                <g clip-path="url(#clip0_1_5925)">
+                                  <path
+                                    d="M21 10.5C21 17.5 12 23.5 12 23.5C12 23.5 3 17.5 3 10.5C3 8.11305 3.94821 5.82387 5.63604 4.13604C7.32387 2.44821 9.61305 1.5 12 1.5C14.3869 1.5 16.6761 2.44821 18.364 4.13604C20.0518 5.82387 21 8.11305 21 10.5Z"
+                                    stroke="#787982"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M12 13.5C13.6569 13.5 15 12.1569 15 10.5C15 8.84315 13.6569 7.5 12 7.5C10.3431 7.5 9 8.84315 9 10.5C9 12.1569 10.3431 13.5 12 13.5Z"
+                                    stroke="#787982"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_1_5925">
+                                    <rect
+                                      width="24"
+                                      height="24"
+                                      fill="white"
+                                      transform="translate(0 0.5)"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </span>
+                            <div>
+                                <h6>2972 Westheimer Rd</h6>
+                                <p class="mt-4 text-caption">2972 Westheimer Rd. Santa Ana, Illinois 85486...  </p>
+                            </div>
+                          </li>
+                          <li class="d-flex align-items-center gap-20 py-16 line-bt">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="25"
+                                viewBox="0 0 24 25"
+                                fill="none"
+                              >
+                                <g clip-path="url(#clip0_1_5925)">
+                                  <path
+                                    d="M21 10.5C21 17.5 12 23.5 12 23.5C12 23.5 3 17.5 3 10.5C3 8.11305 3.94821 5.82387 5.63604 4.13604C7.32387 2.44821 9.61305 1.5 12 1.5C14.3869 1.5 16.6761 2.44821 18.364 4.13604C20.0518 5.82387 21 8.11305 21 10.5Z"
+                                    stroke="#787982"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M12 13.5C13.6569 13.5 15 12.1569 15 10.5C15 8.84315 13.6569 7.5 12 7.5C10.3431 7.5 9 8.84315 9 10.5C9 12.1569 10.3431 13.5 12 13.5Z"
+                                    stroke="#787982"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_1_5925">
+                                    <rect
+                                      width="24"
+                                      height="24"
+                                      fill="white"
+                                      transform="translate(0 0.5)"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </span>
+                            <div>
+                                <h6>2464 Royal Ln. Mesa</h6>
+                                <p class="mt-4 text-caption">2464 Royal Ln. Mesa, New Jersey 45463... </p>
+                            </div>
+                          </li>
+                          <li class="d-flex align-items-center gap-20 pt-16">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="25"
+                                viewBox="0 0 24 25"
+                                fill="none"
+                              >
+                                <g clip-path="url(#clip0_1_5925)">
+                                  <path
+                                    d="M21 10.5C21 17.5 12 23.5 12 23.5C12 23.5 3 17.5 3 10.5C3 8.11305 3.94821 5.82387 5.63604 4.13604C7.32387 2.44821 9.61305 1.5 12 1.5C14.3869 1.5 16.6761 2.44821 18.364 4.13604C20.0518 5.82387 21 8.11305 21 10.5Z"
+                                    stroke="#787982"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M12 13.5C13.6569 13.5 15 12.1569 15 10.5C15 8.84315 13.6569 7.5 12 7.5C10.3431 7.5 9 8.84315 9 10.5C9 12.1569 10.3431 13.5 12 13.5Z"
+                                    stroke="#787982"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_1_5925">
+                                    <rect
+                                      width="24"
+                                      height="24"
+                                      fill="white"
+                                      transform="translate(0 0.5)"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </span>
+                            <div>
+                                <h6>6391 Elgin St. Celina</h6>
+                                <p class="mt-4 text-caption">6391 Elgin St. Celina, Delaware 10299... </p>
+                            </div>
+                          </li>
+                          
+                        </ul>
+                        
+                      </div>
+                </div>
+                <div class="footer-fixed p-16">
+                    <a href="check-out.html" class="tf-btn primary">Confirm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
     
    

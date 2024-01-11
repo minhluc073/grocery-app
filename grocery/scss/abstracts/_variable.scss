@@ -97,4 +97,14 @@ $rgba-dark: rgba(27, 50, 95, 0.1);
     --linner-1: linear-gradient(180deg, rgba(135, 59, 10, 0) 47.91%, #2e1200 100%);
 
     --onSurface: #151515;
+
+    //hover
+    --primary-hover: #d54313;
+    --success-hover: #19770c;
+    --danger-hover: #b30808;
+    --warning-hover: #e37d05;
+    --info-hover: #91045a;
+    --light-hover:#d0caca;
+    --dark-hover:#15294f;
+    --disable-hover:#c4a896;
 }

@@ -89,16 +89,16 @@
 }
 
 .modal-sidebar {
-    width: 290px;
+    width: 300px;
     .sidebar-header {
         background-color: var(--primary);
-        padding: 18px 20px 20px 20px;
+        padding: 15px;
         display: flex;
         gap: 16px;
         align-items: center;
         .sidebar-logo {
-            width: 91px;
-            height: 91px;
+            width: 80px;
+            height: 80px;
             flex-shrink: 0;
         }
         p {
@@ -107,7 +107,7 @@
         }
     }
     .sidebar-content {
-        padding: 30px 20px;
+        padding: 30px 15px;
         height: 100vh;
         overflow-x: hidden;
         background: var(--white);
@@ -133,6 +133,10 @@
         }
     }
 }
+.modal-second{
+    width: 280px;
+}
+
 
 .nav-link-item {
     display: flex;
@@ -152,13 +156,18 @@
     }
     span {
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 22.4px;
     }
 
     .icon {
         font-size: 20px;
         color: var(--text-4);
+    }
+    &.not-link{
+        &::after{
+            display: none;
+        }
     }
 }
 .sub-menu {

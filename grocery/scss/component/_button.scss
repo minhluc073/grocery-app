@@ -25,8 +25,7 @@
         border: 1px solid var(--primary);
         color: $white;
         &:hover {
-            color: var(--primary);
-            background: var(--white);
+            background: var(--primary-hover);
         }
     }
     &.surface {
@@ -52,8 +51,7 @@
         border: 1px solid var(--success);
         color: $white;
         &:hover {
-            color: var(--success);
-            background: var(--white);
+            background: var(--success-hover);
         }
     }
     &.danger {
@@ -61,8 +59,7 @@
         border: 1px solid var(--danger);
         color: $white;
         &:hover {
-            color: var(--danger);
-            background: var(--white);
+            background: var(--danger-hover);
         }
     }
     &.warning {
@@ -70,8 +67,7 @@
         border: 1px solid var(--warning);
         color: $white;
         &:hover {
-            color: var(--warning);
-            background: var(--white);
+            background: var(--warning-hover);
         }
     }
     &.info {
@@ -79,8 +75,7 @@
         border: 1px solid var(--info);
         color: $white;
         &:hover {
-            color: var(--info);
-            background: var(--white);
+            background: var(--info-hover);
         }
     }
     &.light {
@@ -88,8 +83,7 @@
         border: 1px solid var(--light);
         color: $onSurface;
         &:hover {
-            color: var(--light);
-            background: $onSurface;
+            background: var(--light-hover);
         }
     }
     &.dark {
@@ -97,8 +91,7 @@
         border: 1px solid var(--dark);
         color: $white;
         &:hover {
-            color: var(--dark);
-            background: var(--white);
+            background: var(--dark-hover);
         }
     }
     &.disable {
@@ -106,8 +99,7 @@
         border: 1px solid var(--disable);
         color: $white;
         &:hover {
-            color: var(--disable);
-            background: var(--white);
+            background: var(--disable-hover);
         }
     }
     &.light-btn-primary {

@@ -1,14 +1,15 @@
 .header {
     display: flex;
     justify-content: center;
-    padding: 8px 20px 12px;
+    align-items: center;
+    padding: 8px 15px 12px;
     position: relative;
     min-height: 48px;
     .icon {
         height: 24px;
         width: 24px;
-        font-size: 20px;
-        @include flex(center, center);
+        display: flex;
+        align-items: center;
     }
 
     .left {
@@ -16,8 +17,9 @@
         left: 20px;
         top: 8px;
         .icon {
-            font-size: 14px;
+            font-size: 18px;
             color: var(--onSurface);
+            font-weight: 500;
         }
     }
     .right {
@@ -27,6 +29,9 @@
         .icon {
             font-size: 22px;
             color: var(--text-4);
+        }
+        .icon-home{
+            font-size: 24px;
         }
     }
     &.absolute {
