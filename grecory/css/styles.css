@@ -1,6 +1,6 @@
 /* ---------------------------------------------------------
     * Name: Grocery
-    * Version: 1.0.0
+    * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -1441,6 +1441,9 @@ code {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.header-style2 .location svg {
+  flex-shrink: 0;
 }
 
 .fixed-top {
@@ -5279,6 +5282,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   text-align: center;
   align-items: center;
   gap: 4px;
+  word-break: break-all;
 }
 .box-cate-filter .cate-filter-item img {
   width: 52px;

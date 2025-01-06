@@ -343,6 +343,11 @@
     }
   };
 
+  var paddingHeight = function (){
+    var heightHeader = $(".header-style2").outerHeight();
+    $(".pt-height").css("padding-top",`${heightHeader + 10}px`);
+  }
+
   $(function () {
     showPass();
     otpInput();
@@ -361,6 +366,7 @@
     showNoti();
     hidePopupNoti();
     clickModalSecond();
+    paddingHeight();
     preloader();
   
   });
